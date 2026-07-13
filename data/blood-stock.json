@@ -1,0 +1,42 @@
+[
+  {
+    "percentage": 85,
+    "group": "A+",
+    "level": "High"
+  },
+  {
+    "level": "Medium",
+    "percentage": 50,
+    "group": "A-"
+  },
+  {
+    "group": "B+",
+    "percentage": 78,
+    "level": "High"
+  },
+  {
+    "level": "Low",
+    "percentage": 25,
+    "group": "B-"
+  },
+  {
+    "level": "Medium",
+    "group": "AB+",
+    "percentage": 60
+  },
+  {
+    "level": "Critical",
+    "group": "AB-",
+    "percentage": 10
+  },
+  {
+    "level": "High",
+    "group": "O+",
+    "percentage": 92
+  },
+  {
+    "percentage": 18,
+    "group": "O-",
+    "level": "Low"
+  }
+]

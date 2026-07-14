@@ -154,7 +154,7 @@ export default function Home() {
               <div style={{ backgroundColor: 'var(--bg-color)', padding: '30px', borderRadius: '12px', borderLeft: '4px solid var(--accent)', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
                 <h4 style={{ color: 'var(--primary)', marginBottom: '12px', fontSize: '1.25rem' }}>Core Values</h4>
                 <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                  Christian Love, Compassion, Integrity, Excellence, and Patient Safety — the principles that guide every decision we make.
+                  Compassion, Integrity, Excellence, and Patient Safety — the principles that guide every decision we make.
                 </p>
               </div>
             </div>

@@ -30,7 +30,7 @@ export default function Home() {
       stats: [
         { num: "38", label: "Years of Service" },
         { num: "16", label: "Clinical Departments" },
-        { num: "60,000+", label: "Annual Patient Visits" },
+        { num: "9,000+", label: "Annual Patient Visits" },
         { num: "250", label: "Inpatient Beds" },
         { num: "24/7", label: "Emergency Trauma Care" },
         { num: "100%", label: "NHIS Accredited" }
@@ -152,8 +152,30 @@ export default function Home() {
                 <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>To be a leading Christian healthcare institution in Ghana.</p>
               </div>
               <div style={{ backgroundColor: 'var(--bg-color)', padding: '30px', borderRadius: '12px', borderLeft: '4px solid var(--accent)', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
-                <h4 style={{ color: 'var(--primary)', marginBottom: '12px', fontSize: '1.25rem' }}>Core Values</h4>
-                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6', fontWeight: '600' }}>Compassion • Integrity • Excellence • Patient Safety</p>
+                <h4 style={{ color: 'var(--primary)', marginBottom: '16px', fontSize: '1.25rem' }}>Core Values</h4>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                  {[
+                    { label: '✝ Christian Love', color: '#0f6cbd', bg: 'rgba(15,108,189,0.08)' },
+                    { label: '🤝 Compassion',     color: '#0e7490', bg: 'rgba(14,116,144,0.08)' },
+                    { label: '🛡 Integrity',       color: '#7c3aed', bg: 'rgba(124,58,237,0.08)' },
+                    { label: '⭐ Excellence',      color: '#b45309', bg: 'rgba(180,83,9,0.08)'  },
+                    { label: '❤ Patient Safety',  color: '#dc2626', bg: 'rgba(220,38,38,0.08)'  },
+                  ].map((v, i) => (
+                    <span key={i} style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      padding: '5px 12px',
+                      borderRadius: '20px',
+                      fontSize: '0.78rem',
+                      fontWeight: '700',
+                      color: v.color,
+                      backgroundColor: v.bg,
+                      border: `1px solid ${v.color}22`,
+                      letterSpacing: '0.01em',
+                    }}>{v.label}</span>
+                  ))}
+                </div>
               </div>
             </div>
 

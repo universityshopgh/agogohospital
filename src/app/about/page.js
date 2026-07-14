@@ -117,19 +117,16 @@ export default function About() {
       <section className="section" style={{ backgroundColor: 'var(--white)' }}>
         <div className="container">
           <div className="section-header center">
-            <span className="section-tag">Timeline</span>
-            <h2 className="section-title">Our Milestone Journey</h2>
+            <span className="section-tag">History</span>
+            <h2 className="section-title">Key Milestones</h2>
           </div>
 
-          <div className="timeline">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '16px' }}>
             {historyTimeline.map((item, idx) => (
-              <div key={idx} className="timeline-item">
-                <div className="timeline-badge"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-num">{item.year}</div>
-                  <h3 className="timeline-title" style={{ fontWeight: '800' }}>{item.title}</h3>
-                  <p className="timeline-desc">{item.desc}</p>
-                </div>
+              <div key={idx} className="card" style={{ padding: '20px', borderTop: '3px solid var(--primary)', textAlign: 'center' }}>
+                <div style={{ fontSize: '1.4rem', fontWeight: '900', color: 'var(--primary)', marginBottom: '6px' }}>{item.year}</div>
+                <h4 style={{ fontSize: '0.9rem', fontWeight: '700', marginBottom: '6px', color: 'var(--text-color)' }}>{item.title}</h4>
+                <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', lineHeight: '1.4' }}>{item.desc}</p>
               </div>
             ))}
           </div>

@@ -194,85 +194,101 @@ function LayoutShell({ children }) {
 
 
 
-      {/* 3. Footer */}
-      <footer className="footer" style={{ borderTop: '1px solid #1e293b', backgroundColor: '#0f172a' }}>
+      {/* Footer */}
+      <footer style={{ backgroundColor: '#0f172a', borderTop: '1px solid #1e293b', paddingTop: '56px', paddingBottom: '0' }}>
         <div className="container">
-          <div className="footer-grid">
-            
-            {/* Col 1: Hospital Info */}
-            <div className="footer-col">
-              <div className="footer-logo" style={{ marginBottom: '16px' }}>
+
+          {/* Top Grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', paddingBottom: '48px', borderBottom: '1px solid #1e293b' }}>
+
+            {/* Col 1: About */}
+            <div>
+              <h4 style={{ color: '#ffffff', fontWeight: '800', fontSize: '1.1rem', marginBottom: '6px' }}>Agogo Presbyterian Hospital</h4>
+              <p style={{ fontSize: '0.8rem', color: '#475569', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: '700', marginBottom: '16px' }}>Asante Akim North · Ashanti Region</p>
+              <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: '1.7' }}>
+                Providing compassionate, quality healthcare to our community since 1931.
+              </p>
+              <p style={{ fontSize: '0.8rem', color: '#475569', marginTop: '12px' }}>
+                NHIS Accredited · Presbyterian Church of Ghana
+              </p>
+            </div>
+
+            {/* Col 2: Navigation */}
+            <div>
+              <h5 style={{ color: '#ffffff', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700', marginBottom: '18px' }}>Navigation</h5>
+              <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {[
+                  { label: 'Home', href: '/' },
+                  { label: 'Departments & Services', href: '/departments' },
+                  { label: 'Patient Information', href: '/patient-info' },
+                  { label: 'About Us', href: '/about' },
+                  { label: 'Contact', href: '/contact' },
+                ].map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} style={{ color: '#94a3b8', textDecoration: 'none', fontSize: '0.88rem', transition: 'color 0.2s' }}
+                      onMouseEnter={e => e.target.style.color = '#ffffff'}
+                      onMouseLeave={e => e.target.style.color = '#94a3b8'}
+                    >{link.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Col 3: Contact */}
+            <div>
+              <h5 style={{ color: '#ffffff', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700', marginBottom: '18px' }}>Contact</h5>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 <div>
-                  <h4 className="footer-logo-title" style={{ fontSize: '1.3rem', fontWeight: '800', color: '#FFFFFF', letterSpacing: '-0.02em', margin: 0, padding: 0 }}>Agogo Presbyterian</h4>
-                  <span className="footer-logo-sub" style={{ fontSize: '0.7rem', color: '#64748B', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '0.05em' }}>Healthcare Service</span>
+                  <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '3px' }}>Emergency (24/7)</span>
+                  <a href="tel:+2335438494737" style={{ color: '#f87171', fontWeight: '700', fontSize: '0.95rem', textDecoration: 'none' }}>+233 543 849 4737</a>
+                </div>
+                <div>
+                  <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '3px' }}>Reception</span>
+                  <a href="tel:+2335438494737" style={{ color: '#94a3b8', fontSize: '0.88rem', textDecoration: 'none' }}>+233 543 849 4737</a>
+                </div>
+                <div>
+                  <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '3px' }}>Email</span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.88rem' }}>info@agogopresbyhospital.org</span>
+                </div>
+                <div>
+                  <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '3px' }}>Address</span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.88rem' }}>Main Hospital Road, Agogo, Ghana</span>
                 </div>
               </div>
-              <p style={{ fontSize: '0.9rem', lineHeight: '1.6', color: '#94a3b8', marginBottom: '16px' }}>
-                Serving our community with compassionate healthcare since 1931.
-              </p>
-              <p style={{ fontSize: '0.9rem', color: '#94a3b8' }}>
-                Agogo, Ashanti Region, Ghana
-              </p>
             </div>
 
-            {/* Col 2: Quick Links */}
-            <div className="footer-col">
-              <h4 style={{ fontSize: '1.05rem', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '20px' }}>Quick Links</h4>
-              <ul className="footer-links" style={{ listStyle: 'none', padding: 0 }}>
-                <li style={{ marginBottom: '10px' }}><Link href="/departments" style={{ textDecoration: 'none', color: '#94a3b8', fontSize: '0.9rem' }}>Departments</Link></li>
-                <li style={{ marginBottom: '10px' }}><Link href="/patient-info" style={{ textDecoration: 'none', color: '#94a3b8', fontSize: '0.9rem' }}>Patient Information</Link></li>
-                <li style={{ marginBottom: '10px' }}><Link href="/portal" style={{ textDecoration: 'none', color: '#94a3b8', fontSize: '0.9rem' }}>Appointments</Link></li>
-                <li style={{ marginBottom: '10px' }}><Link href="/contact" style={{ textDecoration: 'none', color: '#94a3b8', fontSize: '0.9rem' }}>Emergency</Link></li>
-                <li style={{ marginBottom: '10px' }}><Link href="/contact" style={{ textDecoration: 'none', color: '#94a3b8', fontSize: '0.9rem' }}>Contact</Link></li>
-              </ul>
-            </div>
-
-            {/* Col 3: Emergency Numbers */}
-            <div className="footer-col">
-              <h4 style={{ fontSize: '1.05rem', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '20px' }}>Emergency Numbers</h4>
-              <ul className="footer-links" style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <li>
-                  <span style={{ fontSize: '0.75rem', color: '#64748B', display: 'block', textTransform: 'uppercase', fontWeight: '700' }}>Hotline</span>
-                  <a href="tel:+2335438494737" style={{ color: 'var(--error)', fontWeight: '700', fontSize: '0.95rem', textDecoration: 'none' }}>+233 543 849 4737</a>
-                </li>
-                <li>
-                  <span style={{ fontSize: '0.75rem', color: '#64748B', display: 'block', textTransform: 'uppercase', fontWeight: '700' }}>Ambulance</span>
-                  <a href="tel:+2335438494737" style={{ color: '#E2E8F0', fontWeight: '600', fontSize: '0.9rem', textDecoration: 'none' }}>+233 543 849 4737</a>
-                </li>
-                <li>
-                  <span style={{ fontSize: '0.75rem', color: '#64748B', display: 'block', textTransform: 'uppercase', fontWeight: '700' }}>Reception</span>
-                  <a href="tel:+2335438494737" style={{ color: '#E2E8F0', fontWeight: '600', fontSize: '0.9rem', textDecoration: 'none' }}>+233 543 849 4737</a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Col 4: Opening Hours */}
-            <div className="footer-col">
-              <h4 style={{ fontSize: '1.05rem', color: '#FFFFFF', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '20px' }}>Opening Hours</h4>
-              <ul className="footer-links" style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.9rem' }}>
-                <li style={{ display: 'flex', flexDirection: 'column' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#64748B', textTransform: 'uppercase', fontWeight: '700' }}>Emergency</span>
-                  <span style={{ color: '#FFFFFF', fontWeight: '600', marginTop: '2px' }}>Emergency — 24/7</span>
-                </li>
-                <li style={{ display: 'flex', flexDirection: 'column' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#64748B', textTransform: 'uppercase', fontWeight: '700' }}>Outpatient (OPD)</span>
-                  <span style={{ color: '#FFFFFF', fontWeight: '600', marginTop: '2px' }}>OPD — Mon–Fri, 8:00 AM–5:00 PM</span>
-                </li>
-                <li style={{ display: 'flex', flexDirection: 'column' }}>
-                  <span style={{ fontSize: '0.75rem', color: '#64748B', textTransform: 'uppercase', fontWeight: '700' }}>Visiting Hours</span>
-                  <span style={{ color: '#FFFFFF', fontWeight: '600', marginTop: '2px' }}>Visiting Hours — Daily</span>
-                </li>
-              </ul>
+            {/* Col 4: Hours */}
+            <div>
+              <h5 style={{ color: '#ffffff', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: '700', marginBottom: '18px' }}>Opening Hours</h5>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                {[
+                  { label: 'Emergency', hours: '24 Hours, 7 Days' },
+                  { label: 'OPD Clinic', hours: 'Mon – Fri: 8AM – 5PM' },
+                  { label: 'Laboratory', hours: 'Daily (Outpatient: 7AM–7PM)' },
+                  { label: 'Administration', hours: 'Mon – Fri: 8AM – 4:30PM' },
+                ].map((item, idx) => (
+                  <div key={idx}>
+                    <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '2px' }}>{item.label}</span>
+                    <span style={{ color: '#94a3b8', fontSize: '0.85rem' }}>{item.hours}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
           </div>
 
-          {/* Footer Bottom */}
-          <div className="footer-bottom" style={{ borderTop: '1px solid #1e293b', paddingTop: '24px', marginTop: '48px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', fontSize: '0.85rem', color: '#64748b' }}>
-            <p style={{ margin: 0 }}>© 2026 Agogo Presbyterian Hospital. NHIS Accredited · Presbyterian Church of Ghana · Asante Akim North, Ashanti Region.</p>
-            <div className="footer-legal-links" style={{ display: 'flex', gap: '20px' }}>
-              <Link href="/privacy" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</Link>
-              <Link href="/terms" style={{ color: '#64748b', textDecoration: 'none' }}>Terms of Use</Link>
+          {/* Bottom Bar */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', padding: '20px 0', fontSize: '0.8rem', color: '#475569' }}>
+            <p style={{ margin: 0 }}>© {new Date().getFullYear()} Agogo Presbyterian Hospital · Asante Akim North, Ashanti Region, Ghana</p>
+            <div style={{ display: 'flex', gap: '20px' }}>
+              <Link href="/privacy" style={{ color: '#475569', textDecoration: 'none' }}
+                onMouseEnter={e => e.target.style.color = '#94a3b8'}
+                onMouseLeave={e => e.target.style.color = '#475569'}
+              >Privacy Policy</Link>
+              <Link href="/terms" style={{ color: '#475569', textDecoration: 'none' }}
+                onMouseEnter={e => e.target.style.color = '#94a3b8'}
+                onMouseLeave={e => e.target.style.color = '#475569'}
+              >Terms of Use</Link>
             </div>
           </div>
 

@@ -301,6 +301,11 @@ img {
   align-items: center;
 }
 
+/* Hidden on desktop — only shown in the mobile slide-down menu */
+.nav-mobile-actions {
+  display: none;
+}
+
 .nav-link {
   font-family: var(--font-family-heading);
   font-size: 0.85rem;
@@ -484,11 +489,32 @@ img {
   .nav-actions {
     display: none;
   }
-  
-  .nav-actions.mobile-open {
-    display: flex;
-    margin-top: 16px;
+
+  /* Show mobile action buttons inside the open hamburger menu */
+  .nav-links.mobile-open .nav-mobile-actions {
+    display: block;
     width: 100%;
+    margin-top: 4px;
+  }
+
+  .nav-links.mobile-open .nav-mobile-actions:first-of-type {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(226, 232, 240, 0.6);
+  }
+
+  .dark-mode .nav-links.mobile-open .nav-mobile-actions:first-of-type {
+    border-top-color: rgba(51, 65, 85, 0.6);
+  }
+
+  .nav-links.mobile-open .nav-mobile-actions .btn {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
   }
 }
 

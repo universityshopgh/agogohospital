@@ -160,21 +160,21 @@ function LayoutShell({ children }) {
               </Link>
             </li>
 
-            {/* Mobile Nav Actions */}
-            {mobileMenuOpen && (
-              <div className="nav-actions mobile-open" style={{ flexDirection: 'column', width: '100%', gap: '10px', marginTop: '16px' }}>
-                <Link href="/portal" className="btn btn-primary" style={{ width: '100%' }} onClick={() => setMobileMenuOpen(false)}>
-                  Book Appointment
-                </Link>
-                <a href="tel:+2335438494737" className="btn btn-emergency" style={{ width: '100%', animation: 'none' }} onClick={() => setMobileMenuOpen(false)}>
-                  Emergency
-                </a>
-              </div>
-            )}
+            {/* Mobile-only Action Buttons — shown inside hamburger menu */}
+            <li className="nav-mobile-actions">
+              <Link href="/portal" className="btn btn-primary" style={{ width: '100%', justifyContent: 'center' }} onClick={() => setMobileMenuOpen(false)}>
+                Book Appointment
+              </Link>
+            </li>
+            <li className="nav-mobile-actions">
+              <a href="tel:+2335438494737" className="btn btn-emergency" style={{ width: '100%', justifyContent: 'center', animation: 'none' }} onClick={() => setMobileMenuOpen(false)}>
+                🚨 Emergency
+              </a>
+            </li>
           </nav>
 
           {/* Desktop Right Nav Buttons */}
-          <div className="nav-actions" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div className="nav-actions" style={{ alignItems: 'center', gap: '12px' }}>
             <Link href="/portal" className="btn btn-sm btn-primary" style={{ boxShadow: '0 2px 4px rgba(15, 108, 189, 0.15)' }}>
               Book Appointment
             </Link>

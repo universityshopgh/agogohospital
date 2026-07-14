@@ -21,7 +21,7 @@ export default function Contact() {
 
   const activeContent = {
     heroTitle: "We're Here to Help",
-    heroSubtitle: "Get in touch with our administrative staff, book clinical reviews, or reach our emergency rescue teams.",
+    heroSubtitle: "Reach our staff, book appointments, or contact emergency services.",
     emergencyTitle: "Essential Contacts",
     hotline: "Emergency Hotline (24/7)",
     ambulance: "Ambulance Dispatch",
@@ -42,7 +42,7 @@ export default function Contact() {
     pharmacySchedule: "24 Hours (Outpatient: 7AM - 9PM)",
     adminSchedule: "Mon - Fri: 8:00 AM - 4:30 PM",
     formTitle: "Submit a General Enquiry",
-    formSubtitle: "Please fill out the form below. Our customer care desk will review and reply within 24-48 business hours.",
+    formSubtitle: "Fill in the form below and our team will respond within 24–48 hours.",
     fieldName: "Full Name",
     fieldEmail: "Email Address",
     fieldPhone: "Phone Number",
@@ -198,10 +198,6 @@ export default function Contact() {
                   <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>info@agogopresbyhospital.org</span>
                 </div>
 
-                <div>
-                  <strong>GPS Digital Coordinates:</strong><br/>
-                  <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>Latitude: 6.8021, Longitude: -1.0815 | Ghana Post GPS: AE-0024-9122</span>
-                </div>
               </div>
             </div>
 
@@ -359,47 +355,27 @@ export default function Contact() {
               </form>
             </div>
 
-            {/* Emergency Instructions */}
-            <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)', boxShadow: 'var(--card-shadow)' }}>
+            {/* Emergency Contacts Card */}
+            <div style={{ backgroundColor: 'var(--white)', padding: '40px', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)', boxShadow: 'var(--card-shadow)', alignSelf: 'start' }}>
               <h3 style={{ fontSize: '1.5rem', color: 'var(--error)', borderBottom: '2px solid var(--border-color)', paddingBottom: '12px', marginBottom: '24px' }}>
-                {activeContent.instructionsTitle}
+                Emergency Contacts
               </h3>
-              
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div>
-                  <h4 style={{ fontWeight: '700', fontSize: '1.05rem', color: 'var(--text-color)', marginBottom: '6px' }}>
-                    {activeContent.whenAmbulance}
-                  </h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    {activeContent.whenAmbulanceDesc}
-                  </p>
+                  <span style={{ fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>Emergency Hotline (24/7)</span>
+                  <a href="tel:+2335438494737" style={{ fontSize: '1.3rem', fontWeight: '800', color: 'var(--error)', textDecoration: 'none' }}>+233 543 849 4737</a>
                 </div>
-
-                <div>
-                  <h4 style={{ fontWeight: '700', fontSize: '1.05rem', color: 'var(--text-color)', marginBottom: '6px' }}>
-                    {activeContent.entrance}
-                  </h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    {activeContent.entranceDesc}
-                  </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '20px' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>Ambulance Dispatch</span>
+                  <a href="tel:+2335438494737" style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-color)', textDecoration: 'none' }}>+233 543 849 4737</a>
                 </div>
-
-                <div>
-                  <h4 style={{ fontWeight: '700', fontSize: '1.05rem', color: 'var(--text-color)', marginBottom: '6px' }}>
-                    {activeContent.expect}
-                  </h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    {activeContent.expectDesc}
-                  </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '20px' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>Main Reception</span>
+                  <a href="tel:+2335438494737" style={{ fontSize: '1.1rem', fontWeight: '700', color: 'var(--text-color)', textDecoration: 'none' }}>+233 543 849 4737</a>
                 </div>
-
-                <div>
-                  <h4 style={{ fontWeight: '700', fontSize: '1.05rem', color: 'var(--text-color)', marginBottom: '6px' }}>
-                    {activeContent.whatToBring}
-                  </h4>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                    {activeContent.whatToBringDesc}
-                  </p>
+                <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '20px' }}>
+                  <span style={{ fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>Email</span>
+                  <span style={{ fontSize: '0.95rem', color: 'var(--text-color)' }}>info@agogopresbyhospital.org</span>
                 </div>
               </div>
             </div>

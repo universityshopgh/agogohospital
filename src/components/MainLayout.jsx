@@ -271,8 +271,8 @@ function LayoutShell({ children }) {
           <div className="footer-bottom" style={{ borderTop: '1px solid #1e293b', paddingTop: '24px', marginTop: '48px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '16px', fontSize: '0.85rem', color: '#64748b' }}>
             <p style={{ margin: 0 }}>© 2026 Agogo Presbyterian Hospital. NHIS Accredited · Presbyterian Church of Ghana · Asante Akim North, Ashanti Region.</p>
             <div className="footer-legal-links" style={{ display: 'flex', gap: '20px' }}>
-              <Link href="/patient-info" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</Link>
-              <Link href="/patient-info" style={{ color: '#64748b', textDecoration: 'none' }}>Terms of Use</Link>
+              <Link href="/privacy" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</Link>
+              <Link href="/terms" style={{ color: '#64748b', textDecoration: 'none' }}>Terms of Use</Link>
             </div>
           </div>
 

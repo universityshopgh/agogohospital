@@ -94,7 +94,7 @@ export default function PatientInfo() {
             Patient Information
           </h1>
           <p style={{ color: '#E2E8F0', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
-            Everything you need to know before visiting the hospital.
+            What to know before, during, and after your visit.
           </p>
         </div>
       </section>
@@ -114,10 +114,10 @@ export default function PatientInfo() {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 {[
-                  { title: "Book an Appointment", desc: "Schedule online or register at the hospital. Emergency cases are attended to immediately." },
-                  { title: "Bring Your Documents", desc: "Carry a valid ID and your NHIS card (if applicable)." },
-                  { title: "Referrals", desc: "Some specialist clinics require a referral from your healthcare provider." },
-                  { title: "Arrive Early", desc: "Please arrive at least 30 minutes before your appointment." }
+                  { title: "Book an Appointment", desc: "Schedule online or walk in. Emergencies are attended to immediately." },
+                  { title: "Bring Your Documents", desc: "Valid ID and NHIS card (if applicable)." },
+                  { title: "Referrals", desc: "Some specialist clinics require a referral from your doctor." },
+                  { title: "Arrive Early", desc: "Arrive at least 30 minutes before your appointment." }
                 ].map((item, idx) => (
                   <div key={idx} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                     <div style={{ backgroundColor: 'rgba(15, 108, 189, 0.08)', color: 'var(--primary)', padding: '8px 12px', borderRadius: '6px', fontWeight: 'bold', fontSize: '0.95rem' }}>
@@ -281,14 +281,14 @@ export default function PatientInfo() {
             <span className="section-tag">Resource Centre</span>
             <h2 className="section-title">Patient Resources</h2>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '32px' }}>
-              Download important documents before your visit.
+              Download forms before your visit.
             </p>
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '20px', marginBottom: '40px', textAlign: 'left' }}>
               {[
-                { name: "Admission Form", desc: "Pre-fill basic details to speed up admission registration.", url: "/admission_form.pdf" },
-                { name: "Medical Records Request Form", desc: "Use this to request formal transcripts of clinical files.", url: "/medical_records_request_form.pdf" },
-                { name: "Patient Consent Form", desc: "General information regarding surgical and laboratory procedures.", url: "/patient_consent_form.pdf" }
+                { name: "Admission Form", desc: "For admission registration.", url: "/admission_form.pdf" },
+                { name: "Records Request", desc: "Request clinical files.", url: "/medical_records_request_form.pdf" },
+                { name: "Consent Form", desc: "Information on procedures.", url: "/patient_consent_form.pdf" }
               ].map((form, idx) => (
                 <div key={idx} className="card" style={{ padding: '24px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
@@ -311,9 +311,9 @@ export default function PatientInfo() {
       {/* Need Assistance CTA */}
       <section className="section" style={{ borderTop: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '12px' }}>Need Assistance?</h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '32px' }}>
-            Our team is available to help with appointments, admissions, and general enquiries.
+          <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '12px' }}>Need Help?</h2>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', marginBottom: '32px' }}>
+            Contact us for appointments, admissions, or general enquiries.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn btn-primary">

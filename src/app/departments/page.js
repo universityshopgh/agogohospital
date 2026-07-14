@@ -189,7 +189,7 @@ export default function Departments() {
             Departments & Services
           </h1>
           <p style={{ color: '#E2E8F0', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
-            Find the care you need, from emergency treatment to specialist clinics and diagnostic services.
+            Browse our clinical departments and specialist services.
           </p>
         </div>
       </section>
@@ -286,7 +286,7 @@ export default function Departments() {
                 Diagnostic & Imaging
               </h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
-                Reliable laboratory and imaging services to support accurate diagnosis and treatment.
+                Laboratory and imaging services for accurate diagnosis.
               </p>
               
               <h4 style={{ fontSize: '1.05rem', marginBottom: '12px', fontWeight: '700' }}>Available Services</h4>
@@ -310,7 +310,7 @@ export default function Departments() {
                 Weekly Specialist Clinics
               </h3>
               <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', marginBottom: '20px', lineHeight: '1.6' }}>
-                Consult with experienced healthcare professionals through our scheduled specialist clinics.
+                Scheduled clinics with specialist healthcare professionals.
               </p>
 
               <div className="data-table-wrapper">
@@ -342,7 +342,7 @@ export default function Departments() {
                 </table>
               </div>
               <p style={{ marginTop: '20px', fontSize: '0.85rem', color: 'var(--text-secondary)', fontStyle: 'italic' }}>
-                Note: Some specialist clinics may require a referral.
+                Some clinics require a referral.
               </p>
             </article>
 
@@ -351,9 +351,9 @@ export default function Departments() {
           {/* Need Help CTA */}
           <section className="section" style={{ borderTop: '1px solid var(--border-color)', marginTop: '64px', paddingTop: '64px', textAlign: 'center' }}>
             <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-              <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '12px' }}>Not sure which department you need?</h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '32px' }}>
-                Our team is ready to guide you to the right service.
+              <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '12px' }}>Not sure where to go?</h2>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', marginBottom: '32px' }}>
+                Our team will guide you to the right service.
               </p>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
                 <Link href="/contact" className="btn btn-primary">

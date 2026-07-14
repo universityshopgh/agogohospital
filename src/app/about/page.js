@@ -5,11 +5,11 @@ import Link from 'next/link';
 
 export default function About() {
   const historyTimeline = [
-    { year: "1931", title: "Founding by Basel Mission", desc: "Established as a clinic to address acute medical needs and mother-child care in Asante Akim." },
-    { year: "1953", title: "Ward & Bed Expansion", desc: "Constructed the first general medicine wards and expanded bed capacity to support regional referrals." },
-    { year: "1985", title: "Clinical Training Accreditation", desc: "Accredited as a training center for nurses and midwives in partnership with the Ministry of Health." },
-    { year: "2010", title: "Modern Diagnostic Block", desc: "Commissioned the fully equipped Diagnostic & Imaging laboratory housing digital X-Ray and CT scanning." },
-    { year: "2026", title: "Comprehensive Digital Care", desc: "Integrated computerized portal booking, dynamic blood bank status alerts, and specialized renal dialysis care." }
+    { year: "1931", title: "Founded by Basel Mission", desc: "Established as a clinic serving Asante Akim district." },
+    { year: "1953", title: "Ward Expansion", desc: "First general wards built; bed capacity expanded for regional referrals." },
+    { year: "1985", title: "Training Accreditation", desc: "Accredited training centre for nurses and midwives." },
+    { year: "2010", title: "Diagnostic Block", desc: "Digital X-Ray, ultrasound, and CT scanning commissioned." },
+    { year: "2026", title: "Digital Healthcare", desc: "Online appointments, blood bank alerts, and dialysis unit added." }
   ];
 
   const coreValues = [
@@ -52,11 +52,8 @@ export default function About() {
             <div>
               <span className="section-tag">Our History</span>
               <h2 className="section-title">Serving the Community Since 1931</h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7', marginBottom: '20px' }}>
-                Founded in 1931 by the Basel Mission, Agogo Presbyterian Hospital began as a modest clinical outpost in the Asante Akim district. Over the decades, through partnerships with the Presbyterian Church of Ghana and the Ministry of Health, the facility has grown into a leading 250-bed referral hospital serving the Ashanti region and beyond.
-              </p>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7' }}>
-                Today, the hospital functions as a central healthcare hub, integrating advanced diagnostics, specialist surgery, maternal wards, dialysis, and round-the-clock emergency medical response.
+                Founded in 1931 by the Basel Mission, Agogo Presbyterian Hospital has grown into a leading 250-bed referral hospital, serving the Ashanti Region through emergency care, specialist clinics, diagnostics, maternity, and surgery.
               </p>
             </div>
             
@@ -142,9 +139,9 @@ export default function About() {
       {/* Need Assistance CTA */}
       <section className="section" style={{ borderTop: '1px solid var(--border-color)', backgroundColor: 'var(--bg-color)', textAlign: 'center' }}>
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '12px' }}>Need Assistance?</h2>
-          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', marginBottom: '32px' }}>
-            Our team is available to help with appointments, admissions, and general enquiries.
+          <h2 className="section-title" style={{ fontSize: '2rem', marginBottom: '12px' }}>Need Help?</h2>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', marginBottom: '32px' }}>
+            Contact us for appointments, admissions, or general enquiries.
           </p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '16px', flexWrap: 'wrap' }}>
             <Link href="/contact" className="btn btn-primary">

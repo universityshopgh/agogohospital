@@ -170,12 +170,18 @@ export default function PatientPortal() {
         setIsLoggedIn(true);
         localStorage.setItem('local_patient_session', JSON.stringify(patientUser));
       } else {
-        if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password' || err.code === 'auth/invalid-credential') {
-          setAuthError('Incorrect email or password. Please try again.');
+        if (err.code === 'auth/user-not-found' || err.code === 'auth/invalid-credential') {
+          setAuthError('Account not found. Please check your email or create a new account.');
+        } else if (err.code === 'auth/wrong-password') {
+          setAuthError('Incorrect password. Please try again.');
         } else if (err.code === 'auth/invalid-email') {
           setAuthError('Please enter a valid email address.');
+        } else if (err.code === 'auth/too-many-requests') {
+          setAuthError('Too many failed attempts. Please wait a moment and try again.');
+        } else if (err.code === 'auth/network-request-failed') {
+          setAuthError('Network error. Please check your connection and try again.');
         } else {
-          setAuthError(err.message.replace('Firebase: ', ''));
+          setAuthError('Something went wrong. Please try again later.');
         }
       }
     } finally {

@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy | Agogo Presbyterian Hospital',
-  description: 'How Agogo Presbyterian Hospital collects, uses, and protects your personal and medical information.',
+  title: 'Privacy Policy | Trust-Way Hospital',
+  description: 'How Trust-Way Hospital collects, uses, and protects your personal and medical information.',
 };
 
 export default function PrivacyPolicy() {
@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
 
             <div>
               <h2 style={{ color: 'var(--text-color)', fontSize: '1.3rem', fontWeight: '700', marginBottom: '12px' }}>1. About This Policy</h2>
-              <p>Agogo Presbyterian Hospital ("the Hospital") is committed to protecting your privacy. This policy explains how we handle personal and medical information collected through our website and hospital services.</p>
+              <p>Trust-Way Hospital ("the Hospital") is committed to protecting your privacy. This policy explains how we handle personal and medical information collected through our website and hospital services.</p>
             </div>
 
             <div>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
 
             <div>
               <h2 style={{ color: 'var(--text-color)', fontSize: '1.3rem', fontWeight: '700', marginBottom: '12px' }}>4. Patient Confidentiality</h2>
-              <p>All medical and personal records are treated as strictly confidential in accordance with Ghana's healthcare regulations and the Presbyterian Church of Ghana's ethical standards. Your records will not be shared with third parties without your written consent, except where required by law or for emergency medical treatment.</p>
+              <p>All medical and personal records are treated as strictly confidential in accordance with Ghana's healthcare regulations and the highest clinical ethical standards. Your records will not be shared with third parties without your written consent, except where required by law or for emergency medical treatment.</p>
             </div>
 
             <div>
@@ -70,10 +70,10 @@ export default function PrivacyPolicy() {
               <h2 style={{ color: 'var(--text-color)', fontSize: '1.3rem', fontWeight: '700', marginBottom: '12px' }}>7. Contact</h2>
               <p>For privacy-related enquiries, contact us:</p>
               <div style={{ marginTop: '12px', padding: '20px', backgroundColor: 'var(--bg-color)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <p style={{ margin: 0 }}><strong>Agogo Presbyterian Hospital</strong><br />
+                <p style={{ margin: 0 }}><strong>Trust-Way Hospital</strong><br />
                 Main Hospital Road, Agogo, Ashanti Region, Ghana<br />
                 P.O. Box 27, Agogo<br />
-                Email: info@agogopresbyhospital.org</p>
+                Email: info@trustwayhospital.com</p>
               </div>
             </div>
 

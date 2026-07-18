@@ -180,7 +180,7 @@ export default function Contact() {
             {/* Contact details */}
             <div>
               <span className="section-tag" style={{ textTransform: 'uppercase', fontSize: '0.75rem', fontWeight: '700' }}>Contact Info</span>
-              <h2 className="section-title" style={{ marginBottom: '24px', marginTop: '8px' }}>Agogo Presbyterian Hospital</h2>
+              <h2 className="section-title" style={{ marginBottom: '24px', marginTop: '8px' }}>Trust-Way Hospital</h2>
               
               <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div>
@@ -195,7 +195,7 @@ export default function Contact() {
 
                 <div>
                   <strong>Email Address:</strong><br/>
-                  <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>info@agogopresbyhospital.org</span>
+                  <span style={{ color: 'var(--text-secondary)', fontSize: '0.95rem' }}>info@trustwayhospital.com</span>
                 </div>
 
               </div>
@@ -375,7 +375,7 @@ export default function Contact() {
                 </div>
                 <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '20px' }}>
                   <span style={{ fontSize: '0.75rem', fontWeight: '700', textTransform: 'uppercase', color: 'var(--text-secondary)', display: 'block', marginBottom: '4px' }}>Email</span>
-                  <span style={{ fontSize: '0.95rem', color: 'var(--text-color)' }}>info@agogopresbyhospital.org</span>
+                  <span style={{ fontSize: '0.95rem', color: 'var(--text-color)' }}>info@trustwayhospital.com</span>
                 </div>
               </div>
             </div>

@@ -72,7 +72,7 @@ export default function Home() {
               <div className="section-tag">About Us</div>
               <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '16px' }}>Serving Our Community Since 1931</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.15rem', marginBottom: '24px', lineHeight: '1.7' }}>
-                Founded by the Basel Mission, Agogo Presbyterian Hospital has grown into a leading referral hospital serving the Asante Akim North district with quality, compassionate healthcare.
+                Trust-Way Hospital is a leading referral healthcare provider committed to delivering quality, compassionate, and patient-centered medical services to our community.
               </p>
               <Link href="/patient-info" className="btn btn-primary">Learn More</Link>
             </div>
@@ -200,8 +200,8 @@ export default function Home() {
 
             <div style={{ height: '350px', borderRadius: 'var(--border-radius)', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: 'var(--card-shadow)' }}>
               <iframe
-                title="Agogo Presbyterian Hospital Location"
-                src="https://maps.google.com/maps?q=Agogo%20Presbyterian%20Hospital&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Trust-Way Hospital Location"
+                src="https://maps.google.com/maps?q=Trust-Way%20Hospital&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%" height="100%" style={{ border: 0 }}
                 allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"
               ></iframe>

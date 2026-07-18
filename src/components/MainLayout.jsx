@@ -81,7 +81,7 @@ function LayoutShell({ children }) {
             }}>
               <img 
                 src="/logo.png" 
-                alt="Agogo Presbyterian Hospital Logo" 
+                alt="Trust-Way Hospital Logo" 
                 style={{
                   width: '100%',
                   height: '100%',
@@ -90,8 +90,7 @@ function LayoutShell({ children }) {
               />
             </div>
             <div className="logo-text">
-              <span className="logo-title" style={{ color: 'var(--primary)', fontWeight: '800', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Agogo Presbyterian</span>
-              <span className="logo-sub" style={{ fontSize: '0.7rem', fontWeight: '700', letterSpacing: '0.05em' }}>Hospital</span>
+              <span className="logo-title" style={{ color: 'var(--primary)', fontWeight: '800', fontSize: '1.25rem', letterSpacing: '-0.02em' }}>Trust-Way Hospital</span>
             </div>
           </Link>
 
@@ -203,13 +202,13 @@ function LayoutShell({ children }) {
 
             {/* Col 1: About */}
             <div>
-              <h4 style={{ color: '#ffffff', fontWeight: '800', fontSize: '1.1rem', marginBottom: '6px' }}>Agogo Presbyterian Hospital</h4>
+              <h4 style={{ color: '#ffffff', fontWeight: '800', fontSize: '1.1rem', marginBottom: '6px' }}>Trust-Way Hospital</h4>
               <p style={{ fontSize: '0.8rem', color: '#475569', textTransform: 'uppercase', letterSpacing: '0.06em', fontWeight: '700', marginBottom: '16px' }}>Asante Akim North · Ashanti Region</p>
               <p style={{ fontSize: '0.88rem', color: '#94a3b8', lineHeight: '1.7' }}>
                 Providing compassionate, quality healthcare to our community since 1931.
               </p>
               <p style={{ fontSize: '0.8rem', color: '#475569', marginTop: '12px' }}>
-                NHIS Accredited · Presbyterian Church of Ghana
+                NHIS Accredited · Quality Healthcare Facility
               </p>
             </div>
 
@@ -248,7 +247,7 @@ function LayoutShell({ children }) {
                 </div>
                 <div>
                   <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '3px' }}>Email</span>
-                  <span style={{ color: '#94a3b8', fontSize: '0.88rem' }}>info@agogopresbyhospital.org</span>
+                  <span style={{ color: '#94a3b8', fontSize: '0.88rem' }}>info@trustwayhospital.com</span>
                 </div>
                 <div>
                   <span style={{ fontSize: '0.72rem', color: '#475569', textTransform: 'uppercase', fontWeight: '700', display: 'block', marginBottom: '3px' }}>Address</span>
@@ -279,7 +278,7 @@ function LayoutShell({ children }) {
 
           {/* Bottom Bar */}
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px', padding: '20px 0', fontSize: '0.8rem', color: '#475569' }}>
-            <p style={{ margin: 0 }}>© {new Date().getFullYear()} Agogo Presbyterian Hospital · Asante Akim North, Ashanti Region, Ghana</p>
+            <p style={{ margin: 0 }}>© {new Date().getFullYear()} Trust-Way Hospital · Asante Akim North, Ashanti Region, Ghana</p>
             <div style={{ display: 'flex', gap: '20px' }}>
               <Link href="/privacy" style={{ color: '#475569', textDecoration: 'none' }}
                 onMouseEnter={e => e.target.style.color = '#94a3b8'}

@@ -7,8 +7,8 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: "Agogo Presbyterian Hospital | Quality & Compassionate Care",
-  description: "Welcome to the official website of Agogo Presbyterian Hospital. Access general patient guidelines, outpatient/inpatient clinic services, diagnostic laboratory, emergency services, and medical portal.",
+  title: "Trust-Way Hospital | Quality & Compassionate Care",
+  description: "Welcome to the official website of Trust-Way Hospital. Access patient guidelines, outpatient/inpatient clinic services, diagnostic laboratory, emergency services, and medical portal.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",

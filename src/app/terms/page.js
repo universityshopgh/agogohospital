@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Terms of Use | Agogo Presbyterian Hospital',
-  description: 'Terms and conditions for using the Agogo Presbyterian Hospital website and services.',
+  title: 'Terms of Use | Trust-Way Hospital',
+  description: 'Terms and conditions for using the Trust-Way Hospital website and services.',
 };
 
 export default function TermsOfUse() {
@@ -25,7 +25,7 @@ export default function TermsOfUse() {
 
             <div>
               <h2 style={{ color: 'var(--text-color)', fontSize: '1.3rem', fontWeight: '700', marginBottom: '12px' }}>1. Acceptance of Terms</h2>
-              <p>By accessing or using the Agogo Presbyterian Hospital website, you agree to these Terms of Use. If you do not agree, please do not use this website.</p>
+              <p>By accessing or using the Trust-Way Hospital website, you agree to these Terms of Use. If you do not agree, please do not use this website.</p>
             </div>
 
             <div>
@@ -50,7 +50,7 @@ export default function TermsOfUse() {
 
             <div>
               <h2 style={{ color: 'var(--text-color)', fontSize: '1.3rem', fontWeight: '700', marginBottom: '12px' }}>6. Intellectual Property</h2>
-              <p>All content on this website — including text, images, and logos — belongs to Agogo Presbyterian Hospital or its licensors. You may not reproduce or use any content without written permission.</p>
+              <p>All content on this website — including text, images, and logos — belongs to Trust-Way Hospital or its licensors. You may not reproduce or use any content without written permission.</p>
             </div>
 
             <div>
@@ -61,10 +61,10 @@ export default function TermsOfUse() {
             <div>
               <h2 style={{ color: 'var(--text-color)', fontSize: '1.3rem', fontWeight: '700', marginBottom: '12px' }}>8. Contact</h2>
               <div style={{ marginTop: '12px', padding: '20px', backgroundColor: 'var(--bg-color)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <p style={{ margin: 0 }}><strong>Agogo Presbyterian Hospital</strong><br />
+                <p style={{ margin: 0 }}><strong>Trust-Way Hospital</strong><br />
                 Main Hospital Road, Agogo, Ashanti Region, Ghana<br />
                 P.O. Box 27, Agogo<br />
-                Email: info@agogopresbyhospital.org</p>
+                Email: info@trustwayhospital.com</p>
               </div>
             </div>
 

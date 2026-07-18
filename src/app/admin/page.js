@@ -75,7 +75,7 @@ export default function AdminConsole() {
     e.preventDefault();
     setAdminSubmitting(true);
     setTimeout(() => {
-      if ((adminEmail === 'admin@agogohospital.org' || adminEmail === 'admin') && adminPassword === 'administrator') {
+      if ((adminEmail === 'admin@trustwayhospital.com' || adminEmail === 'admin') && adminPassword === 'administrator') {
         setIsAdminLoggedIn(true);
         setLoginError('');
         localStorage.setItem('admin_session', 'true');
@@ -143,7 +143,7 @@ export default function AdminConsole() {
             <div style={{ textAlign: 'center', marginBottom: '32px' }}>
               <span className="section-tag" style={{ marginBottom: '8px' }}>Administrative Console</span>
               <h2 style={{ fontSize: '1.8rem', fontWeight: '800', color: 'var(--primary)', margin: 0 }}>Admin Login</h2>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginTop: '8px' }}>Authorized Agogo Hospital personnel only.</p>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', marginTop: '8px' }}>Authorized Trust-Way Hospital personnel only.</p>
             </div>
 
             {loginError && (
@@ -217,7 +217,7 @@ export default function AdminConsole() {
             ⚙️ Admin Console Dashboard
           </h1>
           <p style={{ color: '#E2E8F0', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
-            Agogo Presbyterian Hospital internal administration dashboard. Manage submitted enquiries, view bookings, and update blood stocks.
+            Trust-Way Hospital internal administration dashboard. Manage submitted enquiries, view bookings, and update blood stocks.
           </p>
         </div>
       </section>

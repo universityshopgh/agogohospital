@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function About() {
   const historyTimeline = [
-    { year: "1931", title: "Founded by Basel Mission", desc: "Established as a clinic serving Asante Akim district." },
+    { year: "1931", title: "Hospital Founded", desc: "Established as a community clinic providing essential medical care." },
     { year: "1953", title: "Ward Expansion", desc: "First general wards built; bed capacity expanded for regional referrals." },
     { year: "1985", title: "Training Accreditation", desc: "Accredited training centre for nurses and midwives." },
     { year: "2010", title: "Diagnostic Block", desc: "Digital X-Ray, ultrasound, and CT scanning commissioned." },
@@ -13,7 +13,7 @@ export default function About() {
   ];
 
   const coreValues = [
-    "Christian Love & Compassion",
+    "Compassion & Respect",
     "Professional Integrity",
     "Patient Safety & Dignity",
     "Accountability & Excellence",
@@ -53,7 +53,7 @@ export default function About() {
               <span className="section-tag">Our History</span>
               <h2 className="section-title">Serving the Community Since 1931</h2>
               <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.7' }}>
-                Founded in 1931 by the Basel Mission, Agogo Presbyterian Hospital has grown into a leading 250-bed referral hospital, serving the Ashanti Region through emergency care, specialist clinics, diagnostics, maternity, and surgery.
+                Established in 1931, Trust-Way Hospital has grown into a leading 250-bed referral hospital serving our community through high-quality emergency care, specialist clinics, advanced diagnostics, maternity, and surgery.
               </p>
             </div>
             
@@ -87,14 +87,14 @@ export default function About() {
             <div className="card" style={{ padding: '32px' }}>
               <h3 style={{ fontSize: '1.35rem', color: 'var(--primary)', marginBottom: '16px', fontWeight: '800' }}>Our Mission</h3>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                To provide high-quality, affordable, and holistic healthcare with Christian love and compassion, focusing on the poor and vulnerable.
+                To provide high-quality, affordable, and holistic healthcare with compassion and professionalism, focusing on the poor and vulnerable.
               </p>
             </div>
 
             <div className="card" style={{ padding: '32px' }}>
               <h3 style={{ fontSize: '1.35rem', color: 'var(--primary)', marginBottom: '16px', fontWeight: '800' }}>Our Vision</h3>
               <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                To be a leading Christian healthcare institution of excellence in Ghana, providing patient-centered care and clinical training.
+                To be a leading healthcare institution of excellence in Ghana, providing patient-centered care and clinical training.
               </p>
             </div>
 

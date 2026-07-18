@@ -327,7 +327,7 @@ export default function PatientPortal() {
       >
         <div className="container">
           <h1 style={{ color: '#FFFFFF', fontSize: '2.75rem', marginBottom: '12px', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
-            Presbyterian Patient Portal
+            Trust-Way Patient Portal
           </h1>
           <p style={{ color: '#E2E8F0', maxWidth: '600px', margin: '0 auto', fontSize: '1.1rem', textShadow: '0 2px 10px rgba(0,0,0,0.6)' }}>
             Access your medical file records, upcoming appointments, prescriptions, and direct clinical scheduling.
@@ -376,7 +376,7 @@ export default function PatientPortal() {
 
                 <div>
                   <span style={{ textTransform: 'uppercase', fontSize: '0.75rem', fontWeight: '800', letterSpacing: '2px', backgroundColor: 'rgba(255,255,255,0.15)', padding: '6px 12px', borderRadius: '12px', display: 'inline-block', marginBottom: '24px' }}>
-                    Agogo Presby Hospital
+                    Trust-Way Hospital
                   </span>
                   <h2 style={{ fontSize: '2.2rem', fontWeight: '800', lineHeight: '1.2', color: '#FFFFFF', marginBottom: '16px' }}>
                     Access Your Patient Portal

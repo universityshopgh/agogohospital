@@ -18,7 +18,7 @@ const translations = {
     admin: "Admin Console",
     
     announcements: [
-      "Ministry of Health Accredited Government Facility",
+      "Ministry of Health Accredited Facility",
       "24-Hour Emergency & Trauma Care Available",
       "Serving Our Community with Compassion & Quality Healthcare"
     ],
@@ -41,7 +41,7 @@ const translations = {
     quickLinks: "Quick Links",
     emergencyContacts: "Emergency Contacts",
     govtLinks: "Government Healthcare",
-    copyright: "© 2026 Agogo Government Hospital. An official ministry of health healthcare agency.",
+    copyright: "© 2026 Trust-Way Hospital. NHIS Accredited Facility.",
     privacyPolicy: "Privacy Policy",
     termsOfUse: "Terms of Use",
     accessibilityStmt: "Accessibility Statement"

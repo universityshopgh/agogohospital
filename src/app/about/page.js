@@ -1,7 +1,10 @@
-'use client';
-
 import React from 'react';
 import Link from 'next/link';
+
+export const metadata = {
+  title: "About Us | Trust-Way Hospital",
+  description: "Learn about the history, mission, vision, and core values of Trust-Way Hospital. Serving our community with clinical excellence since 1931.",
+};
 
 export default function About() {
   const historyTimeline = [
